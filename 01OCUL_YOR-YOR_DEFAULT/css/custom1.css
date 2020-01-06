@@ -1,0 +1,168 @@
+/* Hide Tags in Detailed Display */
+[aria-label="Tags"]{display:none;}
+#tags{display:none;}
+
+/*--------Top Banner ---------------*/
+
+/*Top Banner Background Color */
+.prm-primary-bg.prm-hue1, prm-spinner.prm-hue1.overlay-cover.light-on-dark:after, prm-topbar .top-nav-bar, prm-search-bar.prm-hue1 {
+	background-color: #9A0100;
+/*  background-color: transparent;*/
+}
+
+/*-----User Area -------*/
+  /*UserName Guest */
+prm-user-area .user-name {
+    text-transform: none;
+    font-weight: 600;
+    color: #fff!important;
+    text-align: left;
+    max-width: 80px;
+}
+
+/*background for Guest Button And Icon */
+.prm-primary-bg.prm-hue2, prm-main-menu[menu-type=full] md-backdrop, prm-search-bookmark-filter .md-button, prm-spinner.prm-hue2.overlay-cover.light-on-dark:after, prm-user-area, prm-user-area md-fab-trigger>.md-button .md-fab-toolbar-background {
+    background-color: #9A0100;
+/*    background-color: #ddd;*/
+}
+
+  /*Hover */
+  /*NAV BAR REGULAR button hover */
+  prm-topbar .md-button:focus, prm-topbar .md-button:hover {
+      color: #fff !important;
+      background-color: #E31837 !important;
+      box-shadow: none;
+  }
+
+  prm-user-area .user-menu-button .user-name {
+      text-transform: none;
+      font-weight: 600;
+      color: #E31837;
+      text-align: left;
+      max-width: 150px;
+  }
+
+/*  TOPBAR - USER AREA - HOVER COLOR */
+  md-fab-toolbar md-toolbar {
+      background-color: #9A0100 !important;
+      pointer-events: none;
+      z-index: 23;
+  }
+
+/*Top Bar- User Area - Button Link Color - On Hover */
+/*Language Button hover */
+
+prm-topbar .md-button {
+  color: #fff !important;
+/*  color: #000 !important;*/
+  text-transform: none;
+  height: 100%;
+  border-radius: 0;
+  margin: 0;
+}
+
+prm-user-area md-fab-toolbar .md-fab-action-item md-input-container md-select, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container .md-input-container-dummy > .md-select-dummy, prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container md-select, prm-user-area md-fab-toolbar ._md-fab-action-item md-input-container .md-input-container-dummy > .md-select-dummy {
+    color: #fff;
+    height: 100%;
+}
+
+/*User Area - Hover - Button  Color - My Library Card*/
+prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]) {
+    color: #E31837;
+}
+
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]) {
+      color: #E31837;
+  }
+
+  /*User Area - Hover - Button on Hover Color - My Library Card*/
+prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]):focus, prm-user-area md-fab-toolbar .md-fab-action-item .md-button.md-primoExplore-theme:not([disabled]):hover, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]):focus, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container.md-primoExplore-theme:not([disabled]):hover {
+    background-color: #eee;
+    color: #fff;
+    box-shadow: none!important;
+}
+
+/*Language Label - On Hover */
+prm-user-area md-fab-toolbar .md-fab-action-item md-input-container md-select:hover, prm-user-area md-fab-toolbar .md-fab-action-item md-input-container .md-input-container-dummy:hover {
+    color: #fff; /*Language - English- Text Color */
+    background-color: #E31837; /*background-color for English Label*/
+    height: 100%;
+}
+
+/*Search Bar Wrapper color */
+  prm-search-bar, prm-atoz-search-bar, prm-journals-search-bar, prm-browse-search-bar, prm-tags-search-bar {
+    background-color: #E31837;
+ }
+
+/*Facets Link Color */
+.section-title prm-icon {
+    color: #E31837;
+}
+
+.link-alt-color, .md-button.button-as-link.link-alt-color, .section-title prm-icon {
+    color: #E31837;
+}
+
+/*Details Tab Link and Icon Color */
+
+.prm-primary-color, .result-item-actions .custom-button, .result-item-actions .more-options-button, .md-autocomplete-suggestions .suggestion-scope, md-tab-content .tab-content-header md-input-container md-select-value .md-text {
+    color: #E31837;
+}
+
+
+/*Links*/
+a, .md-button.arrow-link-button .button-content {
+  color: #E31837;
+}
+
+/*YORKU-CUSTOM*/
+
+/* OMNI logo on homepage */
+md-card > :not(md-card-content) img,
+md-card > img {
+  max-width: 300px;
+}
+prm-main-menu[menu-type=menu] .md-button{
+  font-size: 0.85em !important; 
+}
+/*Capitalize main menu Links */
+prm-main-menu a {
+  text-transform: uppercase !important;
+}
+
+/*Column width on homepage*/
+.flex-60, .layout-row > .flex-60 {
+  max-width: 100%;
+}
+
+/*Main logo*/
+prm-topbar prm-logo {
+  max-width: none;
+}
+
+prm-logo .product-logo {
+  padding: 0;
+}
+
+#banner {
+  width: 240px;
+}
+
+#banner a:last-of-type {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 15px 0px 15px 15px;
+}
+
+/*Hover of logo to be same as others*/
+#banner a:last-of-type:focus, #banner a:last-of-type:hover {
+    color: #fff !important;
+    background-color: #E31837 !important;
+    box-shadow: none;
+}
+
+/*Hide Newspaper Spotlight in Search Results*/
+prm-newspapers-spotlight {
+  display: none;
+}
