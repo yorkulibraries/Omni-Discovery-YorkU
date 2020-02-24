@@ -166,3 +166,7 @@ prm-logo .product-logo {
 prm-newspapers-spotlight {
   display: none;
 }
+
+prm-databases md-card-content span:first-child, prm-databases md-card-content ul li:nth-child(1), prm-databases md-card-content ul li:nth-child(2) {
+  display:none;
+}
